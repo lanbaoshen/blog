@@ -1,0 +1,54 @@
+site_name: Lanbao's Blog
+repo_url: https://github.com/lanbaoshen/blog
+repo_name: lanbaoshen/blog
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: black
+  language: en
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github-alt
+
+plugins:
+  - search
+  - termynal:
+      prompt_literal_start:
+        - "$"
+        - ">"
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/lanbaoshen
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+nav:
+  - Welcome: index.md
+  - Python:
+      - Capturing Grep Real-Time Output: python/capturing_grep_real_time_output.md
