@@ -39,6 +39,7 @@ extra:
 markdown_extensions:
   - admonition
   - def_list
+  - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -57,3 +58,5 @@ nav:
   - Python:
       - Capturing Grep Real-Time Output: python/capturing-grep-real-time-output.md
       - BFS and DFS in Dict Traversal: python/bfs-and-dfs-in-dict-traversal.md
+  - Automated Testing:
+      - Accessibility Conflict: automated/accessibility-conflict.md
