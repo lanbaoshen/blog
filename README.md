@@ -3,6 +3,7 @@
 Here is my blog, based on mkdocs and material theme.
 
 Deploy command, get from [deploying your docs](https://www.mkdocs.org/user-guide/deploying-your-docs/)
+
 ```
 # username.github.io/repo_name
 mkdocs gh-deploy
