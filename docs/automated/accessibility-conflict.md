@@ -34,13 +34,13 @@ Luckily, I got important information in this doc, FocusParkingView and FocusArea
 
 ??? Quote
     
-    # Implement FocusParkingView
+    **Implement FocusParkingView**
 
-    You either can implement your own FocusParkingView or copy the class from the car-ui-library to your project.
+    You either can implement your own `FocusParkingView` or copy the class from the car-ui-library to your project.
     
-    To implement FocusParkingView:
+    To implement `FocusParkingView`:
     
-    Hard code the accessibility class name so that the RotaryService can recognize it:
+    Hard code the accessibility class name so that the `RotaryService` can recognize it:
     
     ```java
     @Override
@@ -49,11 +49,11 @@ Luckily, I got important information in this doc, FocusParkingView and FocusArea
     }
     ```
     
-    # Implement FocusArea
+    **Implement FocusArea**
 
-    Like FocusParkingView, you can either implement your own FocusArea or copy the class from the car-ui-library to your project.
+    Like `FocusParkingView`, you can either implement your own `FocusArea` or copy the class from the car-ui-library to your project.
     
-    To implement FocusArea:
+    To implement `FocusArea`:
     
     Hard code the accessibility class name so that rotary service can recognize it:
 
