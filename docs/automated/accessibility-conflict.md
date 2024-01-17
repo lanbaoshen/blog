@@ -42,10 +42,10 @@ Luckily, I got important information in this doc, FocusParkingView and FocusArea
     
     Hard code the accessibility class name so that the RotaryService can recognize it:
     
-    ```kotlin
+    ```java
     @Override
     public CharSequence getAccessibilityClassName() {
-          return "com.android.car.ui.FocusParkingView";
+        return "com.android.car.ui.FocusParkingView";
     }
     ```
     
@@ -57,11 +57,11 @@ Luckily, I got important information in this doc, FocusParkingView and FocusArea
     
     Hard code the accessibility class name so that rotary service can recognize it:
 
-    ```kotlin
+    ```java
     @Override
-        public CharSequence getAccessibilityClassName() {
-           return "com.android.car.ui.FocusArea";
-        }
+    public CharSequence getAccessibilityClassName() {
+        return "com.android.car.ui.FocusArea";
+    }
     ```
 
 So, the root cause of this problem is Appium suppress Accessibility.  
