@@ -1,10 +1,10 @@
 # Accessibility Conflict
 
-Automated test rack requires the injection of rotary input events using the car_service command, follow [Set up a rotary controller](https://source.android.com/docs/automotive/hmi/rotary_controller/app_developers?hl=en).
+Automated test rack requires the injection of rotary input events using the `car_service` command, follow [Set up a rotary controller](https://source.android.com/docs/automotive/hmi/rotary_controller/app_developers?hl=en).
 
 ## Issue
 
-The car_service command can work normally:
+The `car_service` command can work normally:
 
 <!-- termynal -->
 
@@ -30,7 +30,7 @@ Before this, I already knew that Appium were ultimately implemented based on Acc
 
 I've tried to learn how to implement Focus from [Developing Apps without the Car UI Library](https://source.android.google.cn/docs/automotive/hmi/rotary_controller/app_developers_no_carui).
 
-Luckily, I got important information in this doc, FocusParkingView and FocusArea are based on Accessibility too!
+Luckily, I got important information in this doc, `FocusParkingView` and `FocusArea` are based on Accessibility too!
 
 ??? Quote
     
@@ -66,11 +66,11 @@ Luckily, I got important information in this doc, FocusParkingView and FocusArea
 
 So, the root cause of this problem is Appium suppress Accessibility.  
 
-Knowing why, I found a solution in [appium-uiautomator2-driver](https://github.com/appium/appium-uiautomator2-driver), set `appium:disableSuppressAccessibilityService` `ture` when init driver  
+Knowing why, I found a solution in [appium-uiautomator2-driver](https://github.com/appium/appium-uiautomator2-driver), set `appium:disableSuppressAccessibilityService` `true` when init driver.  
 
 ??? Quote
 
-    |              Capability Name	              |                                                                                                 Description                                                                                                  |
+    |              Capability Name	             |                                                                                                 Description                                                                                                  |
     |:------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
     | appium:disableSuppressAccessibilityService | Being set to `true` tells the instrumentation process to not suppress accessibility services during the automated test. This might be useful if your automated test needs these services. `false` by default |
 

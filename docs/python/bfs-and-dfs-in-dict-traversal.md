@@ -25,25 +25,25 @@ data = {
 
 By constructing generators to implement BFS (Breadth-First Search) and DFS (Depth-First Search) respectively.
 
-```python title='bfs.py'
+```python title="bfs.py"
 from collections import deque
 from collections.abc import Iterable
 
 
 def get_keys(data, ignore_type=(str, bytes)):
-    queue = deque([data])  
-    while queue:
-        node = queue.popleft()
+    deque_ = deque([data])  
+    while deque_:
+        node = deque_.popleft()
         if isinstance(node, dict):
             for k, v in node.items():
                 yield k
-                queue.append(v)
+                deque_.append(v)
         elif isinstance(node, Iterable) and not isinstance(node, ignore_type):
             for i in node:
-                queue.append(i)
+                deque_.append(i)
 ```
 
-```python title='dfs.py'
+```python title="dfs.py"
 from collections.abc import Iterable
 
 
