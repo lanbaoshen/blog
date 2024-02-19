@@ -62,7 +62,6 @@ class _BaseTransformer(NodeTransformer):
 
 
 class ElementTransformer(_BaseTransformer):
-
     def visit_ClassDef(self, node: ClassDef):
         if not (node := super().visit_ClassDef(node)):
             return None
