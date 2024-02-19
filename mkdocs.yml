@@ -58,5 +58,6 @@ nav:
   - Python:
       - Capturing Grep Real-Time Output: python/capturing-grep-real-time-output.md
       - BFS and DFS in Dict Traversal: python/bfs-and-dfs-in-dict-traversal.md
+      - Source Code Batch Changes: python/source-code-batch-changes.md
   - Automated Testing:
       - Accessibility Conflict: automated/accessibility-conflict.md
