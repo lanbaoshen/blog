@@ -21,6 +21,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
   icon:
     repo: fontawesome/brands/github-alt
 
@@ -38,7 +39,9 @@ extra:
 
 markdown_extensions:
   - admonition
+  - attr_list
   - def_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.highlight:
       anchor_linenums: true
@@ -55,9 +58,11 @@ markdown_extensions:
 
 nav:
   - Welcome: index.md
+  - Automated Testing:
+      - Accessibility Conflict: automated/accessibility-conflict.md
   - Python:
       - Capturing Grep Real-Time Output: python/capturing-grep-real-time-output.md
       - BFS and DFS in Dict Traversal: python/bfs-and-dfs-in-dict-traversal.md
       - Source Code Batch Changes: python/source-code-batch-changes.md
-  - Automated Testing:
-      - Accessibility Conflict: automated/accessibility-conflict.md
+#  - Python Cookbook:
+#  - Repositories:

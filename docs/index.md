@@ -4,6 +4,24 @@ hide:
   - toc
 ---
 
-# Welcome to Lanbao's Blog
+<style>
+    .md-content .md-typeset h1 { display: none; }
+</style>
 
-TODO
+<p style="text-align: center; color: #1381d3; font-size: 60px; font-weight: bold; font-family: 'Source Code Pro',serif">
+    Lanbao's Blog
+</p>
+
+Welcome to my blog! I am a SDET and my main language is **Python**, and the auxiliary languages are **Java** and **Kotlin**.
+I will record some reading summaries, problem solutions, technical solutions, and personal repositories introductions here.
+
+## Explore the Blog
+
+<div class="grid cards" markdown>
+
+- Refer to the [**automated testing**](automated/accessibility-conflict.md) practices and problem solutions
+- Read the [**Python**](python/capturing-grep-real-time-output.md) chapter to get the wheel or inspiration
+- View [**Python Cookbook**](python_cookbook) summaries
+- Visit my [**Repositories**](repo)
+
+</div>
