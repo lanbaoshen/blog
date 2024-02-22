@@ -5,7 +5,7 @@ and these operations are too complex to be achieved through the IDE's replacemen
 
 [AST (Abstract Syntax Trees)](https://docs.python.org/3/library/ast.html) is a good choice to do that.
 
-For example, we need to perform operations on the following code:
+For example, perform operations on the following code:
 
 :   * Replace class name `Old` with `New`  
     * Replace class variable name `OLD` with `NEW`  
@@ -44,7 +44,7 @@ import astor
 
 class _BaseTransformer(NodeTransformer):
     def visit_ClassDef(self, node: ClassDef):
-        if 1 == len(node.body):
+        if len(node.body) == 1:
             return None
 
         if node.name.startswith('Old'):
@@ -96,7 +96,7 @@ if __name__ == '__main__':
         file.write(unparse(modify_tree))
 ```
 
-Execute `transformer.py`, and then we can get the modified code:
+Execute `transformer.py` to get the modified code:
 
 ```python title="new_elements.py"
 class NewElements:

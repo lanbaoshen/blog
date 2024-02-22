@@ -15,6 +15,8 @@ hide:
 Welcome to my blog! I am a SDET and my main language is **Python**, and the auxiliary languages are **Java** and **Kotlin**.
 I will record some reading summaries, problem solutions, technical solutions, and personal repositories introductions here.
 
+Due to my work habits, unless otherwise stated, all content is only verified on **macOS**.
+
 ## Explore the Blog
 
 <div class="grid cards" markdown>
