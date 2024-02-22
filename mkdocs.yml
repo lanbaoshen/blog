@@ -66,4 +66,4 @@ nav:
       - Source Code Batch Changes: python/source-code-batch-changes.md
       - Stop or Kill a Thread: python/stop-or-kill-a-thread.md
 #  - Python Cookbook:
-#  - Repositories:
+  - Repositories: repo/index.md
