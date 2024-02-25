@@ -186,15 +186,15 @@ class B:
     ...
 ```
 
-Our subpackage init files here are re-exporting some names in this case classes from some of the modules inside of them.
-The problem is that every module in a subpackage depends on the init of the subpackage. 
+Our subpackage `init` files here are re-exporting some names in this case classes from some of the modules inside of them.
+The problem is that every module in a subpackage depends on the `init` of the subpackage. 
 
-So if the init of the subpackage depends on all the modules in the subpackage, 
+So if the `init` of the subpackage depends on all the modules in the subpackage, 
 then we have kind of made a fake dependency of every module in the subpackage on every other module in the subpackage.
 
-That means even though `module_c` has no import at all, `module_c` now automatically also depends on `module_a` because it depends on the init.
+That means even though `module_c` has no import at all, `module_c` now automatically also depends on `module_a` because it depends on the `init`.
 
-`main` tries to import something from `module_b`, we first have to run the subpackage init, all `subpkg_b` does is import from `module_b`, so we start to import `module_b`.
+`main` tries to import something from `module_b`, we first have to run the subpackage `init`, all `subpkg_b` does is import from `module_b`, so we start to import `module_b`.
 
 `module_b` wants to import something from `module_c`, so we first have to initialize `subpkg_a`. 
 But `subpkg_a` import from `module_a`, and `module_a` import from `module_b`, so now we have a cycle, 
@@ -202,7 +202,7 @@ because we haven't finished initializing `module_b`.
 
 ### Solution
 
-The way to get rid of the cycle is to just make all of your init files blank.
+The way to get rid of the cycle is to just make all of your `init` files blank.
 
 If you still want to give your users a short way to import names, you can define an interface package:
 
