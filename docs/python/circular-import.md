@@ -153,9 +153,6 @@ Even though `A` and `B` are not imported, the string `A` and `B` certainly exist
 from pkg.subpkg_b.module_b import B
 ```
 
-```python title="pkg/__init__.py"
-```
-
 ```python title="pkg/subpkg_a/__init__.py"
 from .module_a import A
 from .module_c import C
