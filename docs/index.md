@@ -13,7 +13,7 @@ hide:
 </p>
 
 Welcome to my blog! I am a SDET and my main language is **Python**, and the auxiliary languages are **Java** and **Kotlin**.
-I will record some reading summaries, problem solutions, technical solutions, and personal repositories introductions here.
+I will record problem solutions, technical solutions, and personal repositories introductions here.
 
 Due to my work habits, unless otherwise stated, all content is only verified on **macOS**.
 
@@ -23,7 +23,6 @@ Due to my work habits, unless otherwise stated, all content is only verified on 
 
 - Refer to the [**automated testing**](automated/accessibility-conflict.md) practices and problem solutions
 - Read the [**Python**](python/capturing-grep-real-time-output.md) chapter to get the wheel or inspiration
-- View [**Python Cookbook**](python_cookbook) summaries
 - Visit my [**Repositories**](repo)
 
 </div>

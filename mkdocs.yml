@@ -66,5 +66,4 @@ nav:
       - Source Code Batch Changes: python/source-code-batch-changes.md
       - Stop or Kill a Thread: python/stop-or-kill-a-thread.md
       - Circular Import: python/circular-import.md
-#  - Python Cookbook:
   - Repositories: repo/index.md
