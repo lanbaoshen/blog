@@ -72,3 +72,5 @@ nav:
       - Stop or Kill a Thread: python/stop-or-kill-a-thread.md
       - Circular Import: python/circular-import.md
   - Repositories: repo/index.md
+  - Other:
+      - Enhance Zsh: other/enhance-zsh.md
