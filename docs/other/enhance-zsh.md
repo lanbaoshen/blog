@@ -5,7 +5,7 @@ On macOS, the default shell is **zsh**. There are many ways to enhance zsh to op
 
 ## [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-The first of all, install **Oh My Zsh**:
+First of all, install **Oh My Zsh**:
 
 <!-- termynal -->
 
