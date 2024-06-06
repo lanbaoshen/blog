@@ -2,6 +2,17 @@
 
 On macOS, the default shell is **zsh**. There are many ways to enhance zsh to optimize our experience.
 
+If you are using Ubuntu, then you first need to install zsh:
+
+<!-- termynal -->
+
+```shell
+$ sudo apt install zsh -y
+
+---> 100%
+
+$ chsh -s /bin/zsh
+```
 
 ## [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
