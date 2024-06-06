@@ -65,7 +65,6 @@ Zsh community projects with zsh plugins, suggestions:
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), 
 [zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) ...
 
-
 <!-- termynal -->
 
 ```shell
