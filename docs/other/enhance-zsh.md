@@ -4,26 +4,17 @@ On macOS, the default shell is **zsh**. There are many ways to enhance zsh to op
 
 If you are using Ubuntu, then you first need to install zsh:
 
-<!-- termynal -->
-
 ```shell
-$ sudo apt install zsh -y
-
----> 100%
-
-$ chsh -s /bin/zsh
+sudo apt install zsh -y
+chsh -s /bin/zsh
 ```
 
 ## [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
 First of all, install **Oh My Zsh**:
 
-<!-- termynal -->
-
 ```shell
-$ sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
-
----> 100%
+sh -c "$(curl -fsSL https://install.ohmyz.sh/)"
 ```
 
 Show command execution time in history command output:
@@ -63,16 +54,12 @@ plugins=(git copypath copyfile)
 Zsh community projects with zsh plugins, suggestions:
 [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), 
 [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions), 
-[zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search) ...
-
-<!-- termynal -->
+[zsh-history-substring-search](https://github.com/zsh-users/zsh-history-substring-search)
 
 ```shell
-$ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-$ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
-
----> 100%
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 ```
 
 ```title="~/.zshrc" hl_lines="8"
