@@ -69,7 +69,9 @@ Zsh community projects with zsh plugins, suggestions:
 <!-- termynal -->
 
 ```shell
-$ git clone https://github.com/zsh-users/[plugin] ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/[plugin]
+$ git clone https://github.com/zsh-users/zsh-syntax-highlighting ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+$ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+$ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
 
 ---> 100%
 ```
@@ -82,7 +84,7 @@ $ git clone https://github.com/zsh-users/[plugin] ${ZSH_CUSTOM:-~/.oh-my-zsh/cus
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(... [plugin] ...)
+plugins=(... zsh-syntax-highlighting zsh-autosuggestions zsh-history-substring-search)
 
 ...
 ```
