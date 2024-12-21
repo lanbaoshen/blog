@@ -23,7 +23,8 @@ Due to my work habits, unless otherwise stated, all content is only verified on 
 
 - Refer to the [**automated testing**](automated/accessibility-conflict.md) practices and problem solutions
 - Read the [**Python**](python/capturing-grep-real-time-output.md) chapter to get the wheel or inspiration
-- Visit my [**Repositories**](repo)
+- My experiences in [**AI**](ai/running-local-model-with-ollama.md) 
+- Visit my [**Repositories**](repo/index.md)
 - Some [**other**](other/enhance-zsh.md) useful
 
 </div>

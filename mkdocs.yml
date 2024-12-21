@@ -30,7 +30,7 @@ plugins:
   - termynal:
       prompt_literal_start:
         - "$"
-        - ">"
+        - ">>>"
 
 extra:
   social:
@@ -72,6 +72,8 @@ nav:
       - Source Code Batch Changes: python/source-code-batch-changes.md
       - Stop or Kill a Thread: python/stop-or-kill-a-thread.md
       - Circular Import: python/circular-import.md
+  - AI:
+      - Running Local Model with Ollama: ai/running-local-model-with-ollama.md
   - Repositories: repo/index.md
   - Other:
       - Enhance Zsh: other/enhance-zsh.md
