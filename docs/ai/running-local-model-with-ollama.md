@@ -46,6 +46,21 @@ Because they'd crack each other up!
 >>> /bye
 ```
 
+## Interact via API
+We can interact with the model using the API:
+```shell
+curl http://localhost:11434/api/chat -d '{
+  "model": "llama3.2",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Tell me i joke"
+    }
+  ],
+  "stream": false
+}'
+```
+
 ## Interact via Code
 We can interact with the model using third party lib `ollama`, we need to install it first:
 ```shell
